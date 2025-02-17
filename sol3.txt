@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int paymentMethod;
+
+    printf("Select Payment Method (1-3):\n");
+    printf("1. Credit/Debit Card\n");
+    printf("2. UPI\n");
+    printf("3. Net Banking\n");
+    scanf("%d", &paymentMethod);
+
+    if (paymentMethod == 1) {
+        printf("Enter your 16-digit card number: ");
+       
+        printf("Payment Successful!\n");  
+    } else if (paymentMethod == 2) {
+        printf("Enter your UPI ID: ");
+        
+        printf("Payment Successful!\n");  
+    } else if (paymentMethod == 3) {
+        printf("Select your bank:\n");
+        printf("1. SBI\n");
+        printf("2. HDFC\n");
+      
+        printf("Payment Successful!\n");  
+    } else {
+        printf("Invalid payment method. Please try again.\n");
+    }
+
+    return 0;
+}
